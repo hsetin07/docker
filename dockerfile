@@ -6,3 +6,6 @@ COPY . .
 RUN pip install flask
 # command to run on container start
 CMD [ "python", "./app.py" ]
+
+
+

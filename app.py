@@ -12,8 +12,8 @@ server = Flask(__name__)
 # print(os.environ.get('API_PASSWORD'))
 @server.route("/")
 def hello():
-    return process.env.API_USER
+    return "Hello World!"
 
 
-if __name__ == "__main__":
+if_name__ == "__main__":
     server.run(host='0.0.0.0')    

@@ -1,5 +1,4 @@
 from flask import Flask
-import os 
 server = Flask(__name__)
 # # Set environment variables
 # os.environ['API_USER'] = 'username'
@@ -15,5 +14,5 @@ def hello():
     return "Hello World!"
 
 
-if_name__ == "__main__":
-    server.run(host='0.0.0.0')    
+if __name__ == "__main__":
+    server.run(host='0.0.0.0')

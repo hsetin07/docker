@@ -10,11 +10,11 @@ USER = os.getenv('API_USER')
 PASSWORD = os.environ.get('API_PASSWORD')       
 print(os.getenv('API_USER'))
 print(os.environ.get('API_PASSWORD'))
+print(os.environ)
 
 @server.route("/")
 def hello():
-    return "Hello World!"
-
+    return PASSWORD
 
 if __name__ == "__main__":
     server.run(host='0.0.0.0')
